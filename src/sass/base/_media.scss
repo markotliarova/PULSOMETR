@@ -12,7 +12,12 @@
             margin: 65px 16px;
         }
     }
-
+    .consultation {
+        padding-left: 30px;
+    }
+    .title {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -33,6 +38,9 @@
             margin-top: 35px;
             max-width: 280px;
         }
+    }
+    .title {
+        font-size: 25px;
     }
 }
 
@@ -71,5 +79,19 @@
             margin-top: 35px;
         }
     }
-
+    .title {
+        text-align: center;
+    }
+    .consultation {
+        padding: 100px 15px 92px 15px;
+        &__descr {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        width: 286px;
+    }
+    .button {
+        width: 286px;
+    }
 }
