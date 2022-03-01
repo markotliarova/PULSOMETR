@@ -1,0 +1,75 @@
+@media (max-width: 991px) {
+    .header {
+        justify-content: space-around;
+    }
+    .promo {
+        &__wrapper {
+            margin-right: 28px;
+        }
+    }
+    .benefits {
+        &__item {
+            margin: 65px 16px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            max-width: 220px;
+        }
+        &__official {
+            display: none;
+        }
+    }
+    .benefits {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icon {
+            margin-top: 35px;
+            max-width: 280px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            margin-top: 12px;
+            max-width: 150px;
+        }
+        &__number {
+            font-size: 13px;
+        }
+    }
+    .button {
+        width: 130px;
+        &_main {
+            width: 275px;
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 30px;
+            text-align: end;
+        }
+        &__subtitle {
+            font-size: 16px;
+            text-align: end;
+        }
+        &__icons {
+            margin-top: 50px;
+            max-width: 275px;
+        }
+    }
+    .benefits {
+        &__item {
+            margin-top: 35px;
+        }
+    }
+
+}
