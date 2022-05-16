@@ -18,6 +18,47 @@
     .title {
         font-size: 32px;
     }
+    .carousel {
+        &__inner {
+            width: 600px;
+            img {
+                width: 100%;
+            }
+            .slick-dots {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 20px;
+                list-style-type: none;
+                padding-left: 0;
+                li {
+                    button {
+                        width: 15px;
+                        height: 15px;
+                        background-color: $main_color;
+                        border-radius: 100%;
+                        border: none;
+                        color: $main_color;
+                        font-size: xx-small;
+                    }
+                }
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &__tabs {
+            align-items: center;
+        }
+    }
+    .review {
+        &__wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -41,6 +82,48 @@
     }
     .title {
         font-size: 25px;
+    }
+    .carousel {
+        padding-bottom: 55px;
+        &__inner {
+            width: 400px;
+            .slick-dots {
+                margin-top: 55px;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &__tabs {
+            margin-top: 25px;
+            height: 290px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        &__content {
+            margin-top: 35px;
+        }
+    }
+    .review {
+        padding: 0;
+        &__wrapper {
+            height: auto;
+        }
+        &__comment {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 71px;
+        }
+        &__text {
+            margin-top: 30px;
+            width: 450px;
+        }
+        &__descr {
+            text-align: justify;
+        }
     }
 }
 
@@ -92,6 +175,23 @@
         width: 286px;
     }
     .button {
-        width: 286px;
+        &_sumbit {
+            width: 286px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 250px;
+        }
+    }
+    .review {
+        &__text {
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__descr {
+            text-align: left;
+        }
     }
 }
